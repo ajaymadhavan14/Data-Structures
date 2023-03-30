@@ -45,97 +45,95 @@ class LinkedList {
     this.size++;
   }
 
-  insert(value,index){
-    if(index < 0 || index > this.size){
-        return
+  insert(value, index) {
+    if (index < 0 || index > this.size) {
+      return;
     }
-    if(index === 0){
-        this.prepend(value)
-    }else{
-        const node = new Node(value)
-        let prev = this.head
-        for (let i = 0; i < index-1; i++) {
-            prev = prev.next
-        }
-        node.next = prev.next
-        prev.next = node
-        this.size++
+    if (index === 0) {
+      this.prepend(value);
+    } else {
+      const node = new Node(value);
+      let prev = this.head;
+      for (let i = 0; i < index - 1; i++) {
+        prev = prev.next;
+      }
+      node.next = prev.next;
+      prev.next = node;
+      this.size++;
     }
   }
 
-  removeFrom(index){
-    if(index < 0 || index > this.size){
-        return null
+  removeFrom(index) {
+    if (index < 0 || index > this.size) {
+      return null;
     }
-    let removedNode
-    if(index === 0){
-       // console.log(this.head);
-        removedNode = this.head
-        this.head = this.head.next
-    }else{
-        let prev = this.head
-        for (let i = 0; i < index-1; i++) {
-           prev = prev.next
-          // console.log(prev); 
-        }
-        removedNode = prev.next
-        prev.next = removedNode.next
+    let removedNode;
+    if (index === 0) {
+      // console.log(this.head);
+      removedNode = this.head;
+      this.head = this.head.next;
+    } else {
+      let prev = this.head;
+      for (let i = 0; i < index - 1; i++) {
+        prev = prev.next;
+        // console.log(prev);
+      }
+      removedNode = prev.next;
+      prev.next = removedNode.next;
     }
-    this.size--
-    return removedNode.value
+    this.size--;
+    return removedNode.value;
   }
 
-  search(value){
-    let i = 0
-    
-    if(this.head.value === value){
-      return i
-    }else{
-      let curr = this.head
+  search(value) {
+    let i = 0;
+
+    if (this.head.value === value) {
+      return i;
+    } else {
+      let curr = this.head;
       while (curr) {
-        
-        if(curr.value === value){
-          return i+1
+        if (curr.value === value) {
+          return i + 1;
         }
-        curr = curr.next
-        i++
+        curr = curr.next;
+        i++;
       }
     }
-    return -1
+    return -1;
   }
 
-
-  removeValue(value){
-    if(this.head.value === value){
-      this.head = this.head.next
-      this.size--
-      return value
-    }else{
-      let removedNode
-      let prev = this.head
+  removeValue(value) {
+    if (this.head.value === value) {
+      this.head = this.head.next;
+      this.size--;
+      return value;
+    } else {
+      let removedNode;
+      let prev = this.head;
       while (prev.next && prev.next.value !== value) {
-        prev = prev.next
+        prev = prev.next;
       }
-      if(prev.next){
-        removedNode = prev.next
-        prev.next = removedNode.next
-        this.size--
-        return value
+      if (prev.next) {
+        removedNode = prev.next;
+        prev.next = removedNode.next;
+        this.size--;
+        return value;
       }
-      return null
+      return null;
     }
   }
 
-  reverse(){
-   let prev = null
-   let curr = this.head
-   while (curr) {
-    let next = curr.next
-    curr.next = prev
-    prev = curr
-    curr = next
-   }
-   this.head = prev
+  reverse() {
+    let prev = null;
+    let curr = this.head;
+    while (curr) {
+      let next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    this.head = prev;
   }
 
   display() {
@@ -148,16 +146,14 @@ class LinkedList {
         listVlaue += `${curr.value} `;
         curr = curr.next;
       }
-      
+
       console.log(listVlaue);
     }
   }
 
-  last(){
+  last() {
     console.log(this.head);
-
   }
-  
 }
 
 const list = new LinkedList();
@@ -169,14 +165,12 @@ console.log("list size ", list.getSize());
 list.display();
 list.append(100);
 list.display();
-list.insert(200,2)
+list.insert(200, 2);
 list.display();
-list.removeFrom(2)
+list.removeFrom(2);
 list.display();
-list.removeValue(1)
-list.display()
+list.removeValue(1);
+list.display();
 console.log(list.search(200));
-list.reverse()
-list.display()
-
-
+list.reverse();
+list.display();
