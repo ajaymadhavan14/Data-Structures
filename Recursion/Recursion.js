@@ -15,12 +15,12 @@ for (let i = 1; i <= 5; i++) {
 
 function f2(n) {
   if (n <= 1) {
-    return n;
+    return null;
   }
   f2(n - 1);
-  console.log("----------------");
+  // console.log("----------------");
   console.log(n);
-  console.log("----------------");
+  // console.log("----------------");
   f2(n - 1);
 }
 f2(5);
