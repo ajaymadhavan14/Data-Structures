@@ -1,20 +1,45 @@
-function fibonacci(n) {
-    if (n <= 1) {
-      return n;
-    }
-    
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
+
+function Helli() {
+  nnnn()
+}
+function nnnn() {
   
-  function generateFibonacciSeries(n) {
-    const series = [];
-    
-    for (let i = 0; i < n; i++) {
-      series.push(fibonacci(i));
+}
+
+
+let hello = new Promise((resolve,reject)=>{
+
+})
+
+useEffect(()=>{
+
+},[])
+
+useState(name,setName)
+
+import React from 'react'
+
+function Toi() {
+    click = function () {
+        
     }
+  return (
+   
+    <div>
+      <button onClick={click}>
+    </div>
+  )
+}
+
+export default Toi
+
+post('/singup')
+
+const Sample = (error,req,res,next)=>{
+try {
     
-    return series;
-  }
-  
-  const fibonacciSeries = generateFibonacciSeries(10);
-  console.log(fibonacciSeries);
+} catch (error) {
+    
+}
+}
+

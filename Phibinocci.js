@@ -1,19 +1,20 @@
-// 0,1,1,2,3,5,8
-
-let n = 10
-for (let i = 0; i < n; i++) {
-    for (let j = i+1; j < n; j++) {
-        if(i<=j){
-        console.log(i+j);
-        break;
-        }
+function fibonacci(n) {
+    if (n <= 1) {
+      return n;
     }
-}
-
-// function Re(n1) {
-//     if (n1 <= 1) {
-//         return n1;
-//       }
-//     Re(n1-1)
-//     console.log(n1);
-// }
+    
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+  
+  function generateFibonacciSeries(n) {
+    const series = [];
+    
+    for (let i = 0; i < n; i++) {
+      series.push(fibonacci(i));
+    }
+    
+    return series;
+  }
+  
+  const fibonacciSeries = generateFibonacciSeries(10);
+  console.log(fibonacciSeries);
