@@ -16,3 +16,20 @@ for (let i = 0; i < array.length; i++) {
     }
     
 }
+
+//Riyas Toi 
+function find(n) {
+    let arr2 = [1,2,4,5,6]
+
+    for (let i = 0; i < arr2.length; i++) {
+        if(arr2[i] === n){
+            return i
+        }else{
+            if(arr2[i]>n){
+                return i
+            }
+        }
+    }
+}
+
+console.log(find(3));
