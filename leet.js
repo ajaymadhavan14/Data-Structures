@@ -1,23 +1,16 @@
-let array = [];
-var lengthOfLongestSubstring = function () {
-  //let s = "abcabcbb"
-  let s = "pwwkew";
 
-  for (let i = 0; i < s.length; i++) {
-    let count = 0;
-    for (let j = 0; j < array.length; j++) {
-      if (s.charAt(i) == array[j]) {
-        count++;
-        break;
-      }
+console.log('hello');
+function duplicatesDelete() {
+  
+  let arr = [1,1,2,2,3]
+
+  for (let i = 0; i < arr.length; i++) {
+      if(arr[i]==arr[i+1]){
+      arr.splice(i,1)
     }
-    if (count == 0) {
-      array.push(s.charAt(i));
-    }
+    
   }
-  return array;
-};
+  return arr.length
+}
 
-console.log(lengthOfLongestSubstring());
-
-console.log(array.length);
+console.log(duplicatesDelete());
