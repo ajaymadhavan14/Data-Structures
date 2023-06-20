@@ -54,3 +54,17 @@ let array = [1,2,3,4,5,6]
 
 const findT = BS(array,2)
 console.log(findT);
+
+
+function Sample(arr1) {
+    let sum = 0
+    let i = 1
+    let len = arr1.length
+    for (;i < len ;) {
+           sum = sum + arr1[i]
+           i= i+i
+    }
+    return sum
+}
+let arr1 = [1,2,3,4,5,6,7,8,9]
+console.log(Sample(arr1));
