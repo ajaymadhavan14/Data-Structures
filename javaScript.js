@@ -28,3 +28,8 @@ let xy = ()=>{
 }
 
 console.log(xy()());
+
+let x1 = ['a','b','c']
+let y1 = x1.join('-')
+
+console.log(y1);
