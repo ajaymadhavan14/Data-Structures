@@ -147,8 +147,8 @@ function find(n) {
     } else {
       if (arr2[i] > n) {
         return i;
-      }else{
-        return arr2.length
+      } else {
+        return arr2.length;
       }
     }
   }

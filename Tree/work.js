@@ -53,14 +53,14 @@ class BinarySearchTree {
   }
 }
 
-const bst = new BinarySearchTree()
-bst.insert(10)
-bst.insert(6)
-bst.insert(11)
-bst.insert(8)
-bst.insert(7)
-bst.insert(12)
-bst.insert(4)
+const bst = new BinarySearchTree();
+bst.insert(10);
+bst.insert(6);
+bst.insert(11);
+bst.insert(8);
+bst.insert(7);
+bst.insert(12);
+bst.insert(4);
 
 console.log(bst);
 console.log(bst.root.left);

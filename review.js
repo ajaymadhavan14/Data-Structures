@@ -22,7 +22,7 @@ let setnewM = newArr.map((x) => {
 });
 
 let setnewF = newArr.filter((x) => {
-  return x % 2!=0;
+  return x % 2 != 0;
 });
 
 let setnewR = newArr.reduce((acc, curr) => {
@@ -39,10 +39,10 @@ let setnewR2 = newArr.reduce((acc, curr) => {
 
 newArr.forEach((e) => {});
 
-console.log(setnewM,'M');
-console.log(setnewF,'F');
-console.log(setnewR,'R');
-console.log(setnewR2,'R');
+console.log(setnewM, "M");
+console.log(setnewF, "F");
+console.log(setnewR, "R");
+console.log(setnewR2, "R");
 
 let users = [
   { firstName: "ajay", lastName: "kishna", age: 24 },
@@ -58,11 +58,11 @@ console.log(userSet);
 
 let userAge = users.reduce((acc, curr) => {
   if (acc[curr.age]) {
-    acc[curr.age] = ++acc[curr.age]
+    acc[curr.age] = ++acc[curr.age];
   } else {
-    acc[curr.age] = 1
+    acc[curr.age] = 1;
   }
-  return acc
+  return acc;
 }, {});
 
 console.log(userAge);
