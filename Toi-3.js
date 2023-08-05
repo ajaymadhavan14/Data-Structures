@@ -18,7 +18,6 @@ function arrS(array){
 }
 function sumFun(array1){
     let array = [6,1,2,3,4,5]
-
 let arr = array1(array)
  let sum = 0
 let secondL = arr[arr.length-2]
