@@ -4,7 +4,7 @@ x[10] = 10;
 
 console.log(x.length);
 
-let n = [1, 2, 3];
+let n = [1, 2, 3,4];
 
 let s = n.map((x) => x ** x);
 
