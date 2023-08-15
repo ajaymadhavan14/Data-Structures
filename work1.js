@@ -11,7 +11,6 @@ let obj2 = {
 console.log(obj2.prop1);
 // console.log(obj);
 // console.log(obj.toString());
-// console.log(obj);
 console.log(obj2.__proto__.toString());
 // console.log(obj.prop2.toString());
 // console.log(obj);

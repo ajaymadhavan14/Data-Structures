@@ -53,6 +53,4 @@ bst.insert(10);
 bst.insert(5);
 bst.insert(15);
 
-// console.log(bst.root);
-
 bst.inOrder(bst.root);

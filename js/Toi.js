@@ -4,8 +4,7 @@ console.log(1 == true);
 
 console.log(2 == true);
 
-
 const text = "how    are    you";
-const compressedText = text.replace(/\s+/g, ' ');
+const compressedText = text.replace(/\s+/g, " ");
 
-console.log(compressedText);  // Output: "how are you"
+console.log(compressedText); // Output: "how are you"

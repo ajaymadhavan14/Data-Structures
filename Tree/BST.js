@@ -37,26 +37,26 @@ class BinarySearchTree {
     }
   }
 
-  search(root,value){
-    if(!root){
-        return false
-    }else{
-        if(root.value === value){
-            return true
-        }else if(root.value > value){
-            return this.search(root.left,value)
-        }else{
-            return this.search(root.right,value)
-        }
+  search(root, value) {
+    if (!root) {
+      return false;
+    } else {
+      if (root.value === value) {
+        return true;
+      } else if (root.value > value) {
+        return this.search(root.left, value);
+      } else {
+        return this.search(root.right, value);
+      }
     }
   }
 }
 
-const bst = new BinarySearchTree()
-console.log('Tree is empty?', bst.isEmpty());
+const bst = new BinarySearchTree();
+console.log("Tree is empty?", bst.isEmpty());
 
-bst.insert(10)
-bst.insert(5)
-bst.insert(15)
+bst.insert(10);
+bst.insert(5);
+bst.insert(15);
 
-console.log(bst.search(bst.root,5));
+console.log(bst.search(bst.root, 5));
